@@ -1,0 +1,5 @@
+interface read {
+    use types.{store, error, key, value}
+    
+    get: func(store: store, key: key) -> result<value, error>
+}

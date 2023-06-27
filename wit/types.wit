@@ -1,0 +1,39 @@
+package wasi:runtime-config
+
+// Common types for WASI runtime config interfaces.
+interface types {
+    /// A runtime config store.
+    type store = u32
+    open-store: func(name: string) -> result<store, error>
+    drop-store: func(store: store)
+
+    type error = u32
+	drop-error: func(error: error)
+	trace: func(error: error) -> string
+
+    type key = string
+
+    type value = list<u8>
+
+    type item = tuple<key, value>
+}
+
+/* Alternative error design
+
+record error {
+    kind: error-kind
+    common: common-error
+}
+
+enum error-kind {
+    invalid-key,
+    not-found,
+    other,
+}
+
+// defined in common wasi-cloud-core package
+resource common-error {
+    trace: func() -> string
+}
+
+*/

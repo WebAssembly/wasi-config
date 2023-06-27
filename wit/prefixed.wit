@@ -1,0 +1,5 @@
+interface prefixed {
+    use types.{store, error, key, item}
+    
+    get-prefixed: func(store: store, prefix: key) -> result<list<item>, error>
+}

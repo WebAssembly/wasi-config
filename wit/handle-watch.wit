@@ -1,0 +1,6 @@
+interface handle-watch {
+    use types.{key, value}
+
+    on-set: func(key: key, value: value)
+    on-delete: func(key: key)
+}
