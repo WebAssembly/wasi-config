@@ -2,11 +2,11 @@
 <ul>
 <li>Imports:
 <ul>
-<li>interface <a href="#wasi:config_runtime_0.1.0"><code>wasi:config/runtime@0.1.0</code></a></li>
+<li>interface <a href="#wasi:config_runtime_0.2.0_draft"><code>wasi:config/runtime@0.2.0-draft</code></a></li>
 </ul>
 </li>
 </ul>
-<h2><a name="wasi:config_runtime_0.1.0"></a>Import interface wasi:config/runtime@0.1.0</h2>
+<h2><a name="wasi:config_runtime_0.2.0_draft"></a>Import interface wasi:config/runtime@0.2.0-draft</h2>
 <hr />
 <h3>Types</h3>
 <h4><a name="config_error"></a><code>variant config-error</code></h4>
