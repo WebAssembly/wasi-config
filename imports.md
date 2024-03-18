@@ -39,11 +39,11 @@ For simplicity right now in supporting multiple implementations, it is being lef
 </ul>
 <h5>Return values</h5>
 <ul>
-<li><a name="get.0"></a> result&lt;option&lt;list&lt;<code>u8</code>&gt;&gt;, <a href="#config_error"><a href="#config_error"><code>config-error</code></a></a>&gt;</li>
+<li><a name="get.0"></a> result&lt;option&lt;<code>string</code>&gt;, <a href="#config_error"><a href="#config_error"><code>config-error</code></a></a>&gt;</li>
 </ul>
 <h4><a name="get_all"></a><code>get-all: func</code></h4>
 <p>Gets a list of all set config data</p>
 <h5>Return values</h5>
 <ul>
-<li><a name="get_all.0"></a> result&lt;list&lt;(<code>string</code>, list&lt;<code>u8</code>&gt;)&gt;, <a href="#config_error"><a href="#config_error"><code>config-error</code></a></a>&gt;</li>
+<li><a name="get_all.0"></a> result&lt;list&lt;(<code>string</code>, <code>string</code>)&gt;, <a href="#config_error"><a href="#config_error"><code>config-error</code></a></a>&gt;</li>
 </ul>
