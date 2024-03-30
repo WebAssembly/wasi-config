@@ -18,8 +18,8 @@ interface runtime {
     get: func(
         /// A string key to fetch
         key: string
-    ) -> result<option<list<u8>>, config-error>;
+    ) -> result<option<string>, config-error>;
 
     /// Gets a list of all set config data
-    get-all: func() -> result<list<tuple<string, list<u8>>>, config-error>;
+    get-all: func() -> result<list<tuple<string, string>>, config-error>;
 }

@@ -22,7 +22,7 @@ Gets a single opaque config value set at the given key if it exists
 
 **Returns:**
 
-`result<option<list<u8>>, config-error>`
+`result<option<string>, config-error>`
 
 An opaque value if the key exists, otherwise `none`
 
@@ -36,6 +36,6 @@ None
 
 **Returns:**
 
-`result<list<tuple<string, list<u8>>>, config-error>`
+`result<list<tuple<string, string>>, config-error>`
 
 A list of key/value tuples
