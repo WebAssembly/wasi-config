@@ -13,10 +13,11 @@ A proposed [WebAssembly System Interface](https://github.com/WebAssembly/WASI) A
 - [Jiaxiao Zhou](https://github.com/Mossaka)
 - [Taylor Thomas](https://github.com/thomastaylor312)
 
-### Phase 4 Advancement Criteria
+### Portability Criteria
 
-`wasi-runtime-config` should have at least two implementations (i.e., from service providers, and or
-cloud providers), and, at the very minimum, pass the testsuite for Windows, Linux, and MacOS.
+`wasi-runtime-config` should have at least two implementations in runtimes (such as wasmCloud, Spin,
+Wasm Workers Server, etc.) and/or config providers/platforms like Azure App Configuration, AWS App
+Config, GCP Runtime Configurator, etc. and pass the testsuite for Windows, Linux, and MacOS. 
 
 ## Table of Contents
 
