@@ -30,8 +30,9 @@ configuration to a component. Configuration values are often polled by the appli
 1. Configuring the runtime behavior of a component. Yes, that sounds generic, but applications do
    all sorts of crazy things with configuration values! Calling entirely different branches of code,
    setting upstream URLs or services, configuring the number of threads to use, etc.
-2. toggling on/off feature flags
-3. A/B testing
+1. Configuring keys and secrets
+1. Toggling on/off feature flags
+1. A/B testing
 
 and many more use cases.
 
