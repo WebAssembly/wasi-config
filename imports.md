@@ -10,7 +10,7 @@
 <hr />
 <h3>Types</h3>
 <h4><a id="error"></a><code>variant error</code></h4>
-<p>An error type that encapsulates the different errors that can occur fetching config</p>
+<p>An error type that encapsulates the different errors that can occur fetching configuration values.</p>
 <h5>Variant Cases</h5>
 <ul>
 <li>
@@ -32,7 +32,9 @@ For simplicity right now in supporting multiple implementations, it is being lef
 <hr />
 <h3>Functions</h3>
 <h4><a id="get"></a><code>get: func</code></h4>
-<p>Gets a single opaque config value set at the given key if it exists</p>
+<p>Gets a configuration value of type <code>string</code> associated with the <code>key</code>.</p>
+<p>The value is returned as an <code>option&lt;string&gt;</code>. If the key is not found,
+<code>Ok(none)</code> is returned. If an error occurs, an <code>Err(error)</code> is returned.</p>
 <h5>Params</h5>
 <ul>
 <li><a id="get.key"></a><code>key</code>: <code>string</code></li>
@@ -42,7 +44,8 @@ For simplicity right now in supporting multiple implementations, it is being lef
 <li><a id="get.0"></a> result&lt;option&lt;<code>string</code>&gt;, <a href="#error"><a href="#error"><code>error</code></a></a>&gt;</li>
 </ul>
 <h4><a id="get_all"></a><code>get-all: func</code></h4>
-<p>Gets a list of all set config data</p>
+<p>Gets a list of configuration key-value pairs of type <code>string</code>.</p>
+<p>If an error occurs, an <code>Err(error)</code> is returned.</p>
 <h5>Return values</h5>
 <ul>
 <li><a id="get_all.0"></a> result&lt;list&lt;(<code>string</code>, <code>string</code>)&gt;, <a href="#error"><a href="#error"><code>error</code></a></a>&gt;</li>
