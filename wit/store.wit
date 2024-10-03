@@ -1,6 +1,8 @@
 interface store {
     /// An error type that encapsulates the different errors that can occur fetching configuration values.
     variant error {
+        /// The provided key is invalid.
+        invalid-name(string),
         /// This indicates an error from an "upstream" config source. 
         /// As this could be almost _anything_ (such as Vault, Kubernetes ConfigMaps, KeyValue buckets, etc), 
         /// the error message is a string.
